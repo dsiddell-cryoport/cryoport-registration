@@ -20,4 +20,6 @@ RUN npm run build
 USER 10001
 
 # Set the default command to provide the built files for deployment
-CMD ["echo", "Build complete. Ready for deployment to Choreo."]
+#CMD ["echo", "Build complete. Ready for deployment to Choreo."]
+# Serve the built React app
+CMD ["serve", "-s", "build", "-l", "8080"]
