@@ -1,74 +1,87 @@
 /* styles.css */
-.container {
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+}
+
+.header img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.icon-text-container {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    flex-direction: column;
-}
-
-.header-logo {
-    height: 50px;
-}
-
-.header-subtext {
-    text-align: center;
-    margin-top: 5px;
-}
-
-.header-image {
-    max-width: 100%;
-    height: auto;
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
 }
 
-.contact-support, .register-device {
-    width: 45%;
-    padding: 20px;
-    background-color: #e0f7fa;
-    margin: 10px;
-    border-radius: 10px;
-    align-items: center;
-}
-
-.contact-links-wrapper, .register-links-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-links, .register-links {
+.icon-text {
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: left;
-    width: 60%;
+    text-align: left;
+    justify-content: center;
+    width: auto;
+    padding: 10px;
 }
 
-.register-links.left-aligned {
-    justify-content: flex-start;
+.icon-text img {
+    width: 40px;
+    height: auto;
 }
 
-.contact-icon, .register-icon {
-    height: 30px;
+@media (min-width: 768px) {
+    .icon-text-container {
+        justify-content: space-evenly;
+    }
 }
 
-.section-icon.large-icon {
-    height: 520px;
-}
-
-.contact-link, .register-link {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
+@media (max-width: 480px) {
+    .icon-text {
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon-text img {
+        width: 50px;
+    }
 }
