@@ -12,11 +12,11 @@ function ContactSupport() {
             <h2>Not familiar with {CONFIG.productName}?</h2>
             <p>Our support experts can help!</p>
             <div className="contact-links-wrapper">
-                <div className="contact-links">
+                <div className="contact-links centered">
                     <img src={emailIcon} alt="Email Icon" className="contact-icon" />
                     <a href={CONFIG.contactEmail} className="contact-link">Contact us by Email</a>
                 </div>
-                <div className="contact-links">
+                <div className="contact-links centered">
                     <img src={phoneIcon} alt="Phone Icon" className="contact-icon" />
                     <a href={CONFIG.contactPhone} className="contact-link">Contact us by Phone</a>
                 </div>

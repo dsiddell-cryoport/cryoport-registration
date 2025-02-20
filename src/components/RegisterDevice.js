@@ -12,11 +12,11 @@ function RegisterDevice() {
             <h2>Already authorized for {CONFIG.productName}?</h2>
             <p>Register your device now!</p>
             <div className="register-links-wrapper">
-                <div className="register-links">
+                <div className="register-links centered">
                     <img src={registerUserIcon} alt="Register User Icon" className="register-icon" />
                     <a href={CONFIG.registerNewUser} className="register-link">Register as a new user</a>
                 </div>
-                <div className="register-links">
+                <div className="register-links left-aligned">
                     <img src={loginUserIcon} alt="Login User Icon" className="register-icon" />
                     <a href={CONFIG.registerDevice} className="register-link">Register a device to an existing user account</a>
                 </div>
