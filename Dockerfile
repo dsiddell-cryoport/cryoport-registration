@@ -16,6 +16,12 @@ COPY . .
 # Build the application
 RUN npm run build
 
+# Install serve globally
+RUN npm install -g serve
+
+# Expose the port for Choreo
+EXPOSE 8080
+
 # Switch to a non-root user after build
 USER 10001
 
