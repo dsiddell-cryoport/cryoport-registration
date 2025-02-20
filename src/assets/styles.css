@@ -48,9 +48,9 @@
 
 .contact-links, .register-links {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 10px;
-    justify-content: center;
+    justify-content: left;
     width: 60%;
 }
 
