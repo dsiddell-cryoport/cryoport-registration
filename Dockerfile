@@ -1,26 +1,23 @@
 # Dockerfile
-
-# Use an official Node.js runtime as a parent image
 FROM node:18-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and install dependencies
-COPY package.json .
+# Copy package.json and package-lock.json first for better caching
+COPY package.json package-lock.json ./
+
+# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# Copy the entire project
 COPY . .
 
 # Build the application
 RUN npm run build
 
-# Switch to a non-root user after all installations and builds
+# Switch to a non-root user after build
 USER 10001
 
-# Expose the application port
-EXPOSE 8080
-
-# Command to start the application
-#CMD ["npx", "serve", "-s", "build"]
+# Set the default command to provide the built files for deployment
+CMD ["echo", "Build complete. Ready for deployment to Choreo."]
