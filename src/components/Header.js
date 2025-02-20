@@ -2,7 +2,7 @@
 import React from 'react';
 import CONFIG from '../config';
 //strLogo = {CONFIG.headerImage};
-import logo from './assets/cryoport-svg.svg';
+import logo from '..cryoport-svg.svg';
 
 function Header() {
     return (
