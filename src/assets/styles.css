@@ -1,0 +1,32 @@
+// styles.css
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-support, .register-device {
+    width: 45%;
+    padding: 20px;
+    background-color: #e0f7fa;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.contact-link, .register-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
