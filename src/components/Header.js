@@ -4,9 +4,7 @@ import CONFIG from '../config';
 //import logo from '../assets/cryoport-svg.svg';
 
 const strLogo = CONFIG.headerImage;
-
-// Dynamically require the image
-const logo = require(`${strLogo}`);
+import logo from `${strLogo}`;
 
 function Header() {
     return (
