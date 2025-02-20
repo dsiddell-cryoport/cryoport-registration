@@ -1,4 +1,5 @@
 /* styles.css */
+/* styles.css */
 body {
     display: flex;
     flex-direction: column;
@@ -13,7 +14,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    /*background-color: white;*/
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -25,8 +26,8 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
-    /*background-color: #007bff;
-    color: white;*/
+    background-color: #007bff;
+    color: white;
     border-radius: 10px;
 }
 
@@ -45,6 +46,12 @@ body {
     background-color: #e0f7fa !important;
     padding: 20px;
     border-radius: 10px;
+}
+
+.section-icon.large-icon {
+    width: 20%; /* Responsive size */
+    max-width: 160px; /* Ensure it doesn't get too large */
+    height: auto;
 }
 
 .icon-text-container {
@@ -75,6 +82,9 @@ body {
     .icon-text-container {
         justify-content: center;
     }
+    .section-icon.large-icon {
+        width: 120px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -84,5 +94,8 @@ body {
     }
     .icon-text img {
         width: 50px;
+    }
+    .section-icon.large-icon {
+        width: 100px;
     }
 }
