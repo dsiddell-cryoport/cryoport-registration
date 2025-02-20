@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import ContactSupport from './components/ContactSupport';
 import RegisterDevice from './components/RegisterDevice';
-import './assets/styles.css';
+import './css/styles.css';
 
 function App() {
     return (

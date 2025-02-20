@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header, .contact-support, .register-device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 22px auto; /* Center align with spacing */
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header img {
+    max-width: 50%;
+    margin-bottom: 15px;
+}
+
+.contact-support, .register-device {
+    background-color: #e0f7fa !important;
+    color: black;
+}
+
+.section-icon.large-icon {
+    width: 20%; /* Responsive size */
+    max-width: 160px; /* Ensure it doesn't get too large */
+    height: auto;
+}
+
+.header-subtext {
+    font-size: 1.1em;
+}
+
+.icon-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: auto;
+    padding: 10px;
+}
+
+.icon-text img {
+    width: 40px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .icon-text-container {
+        justify-content: center;
+    }
+    .section-icon.large-icon {
+        width: 120px;
+    }
+    .header, .contact-support, .register-device {
+        max-width: 800px; /* Align with header width */
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-text {
+        flex-direction: column;
+        text-align: center;
+    }
+    .icon-text img {
+        width: 50px;
+    }
+    .section-icon.large-icon {
+        width: 100px;
+    }
+    .header, .contact-support, .register-device {
+        max-width: 90%;
+    }
+}
