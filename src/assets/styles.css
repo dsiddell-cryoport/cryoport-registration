@@ -38,6 +38,7 @@
     background-color: #e0f7fa;
     margin: 10px;
     border-radius: 10px;
+    align-items: center;
 }
 
 .contact-links-wrapper, .register-links-wrapper {
