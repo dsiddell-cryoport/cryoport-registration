@@ -7,16 +7,16 @@ import phoneIcon from '../assets/phone.svg';
 
 function ContactSupport() {
     return (
-        <div className="contact-support">
+        <div className="section contact-support">
             <img src={supportIcon} alt="Support Icon" className="section-icon large-icon" />
             <h2>Not familiar with {CONFIG.productName}?</h2>
             <p>Our support experts can help!</p>
-            <div className="contact-links-wrapper">
-                <div className="contact-links centered">
+            <div className="icon-text-container">
+                <div className="icon-text">
                     <img src={emailIcon} alt="Email Icon" className="contact-icon" />
                     <a href={CONFIG.contactEmail} className="contact-link">Contact us by Email</a>
                 </div>
-                <div className="contact-links centered">
+                <div className="icon-text">
                     <img src={phoneIcon} alt="Phone Icon" className="contact-icon" />
                     <a href={CONFIG.contactPhone} className="contact-link">Contact us by Phone</a>
                 </div>
