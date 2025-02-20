@@ -23,4 +23,4 @@ USER 10001
 EXPOSE 8080
 
 # Command to start the application
-CMD ["npx", "serve", "-s", "build"]
+#CMD ["npx", "serve", "-s", "build"]
