@@ -48,7 +48,7 @@
 
 .contact-links, .register-links {
     display: flex;
-    align-items: left;
+    align-items: center;
     gap: 10px;
     justify-content: left;
     width: 60%;
@@ -63,7 +63,7 @@
 }
 
 .section-icon.large-icon {
-    height: 120px;
+    height: 520px;
 }
 
 .contact-link, .register-link {
