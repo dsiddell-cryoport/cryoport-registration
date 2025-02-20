@@ -50,6 +50,10 @@ body {
     height: auto;
 }
 
+.header-subtext {
+    font-size: 1.1em;
+}
+
 .icon-text-container {
     display: flex;
     flex-direction: column;

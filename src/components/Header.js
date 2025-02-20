@@ -5,7 +5,7 @@ import CONFIG from '../config';
 function Header() {
     return (
         <header className="header">
-            <img src={CONFIG.headerImage} alt="Company Logo" className="header-logo" />
+            <img src="../assets/cryoport-svg.svg" alt="Company Logo" className="header-logo" />
             <div className="header-text">
                 <h1>Welcome to {CONFIG.companyName} {CONFIG.productName} MONITORING!</h1>
                 <p className="header-subtext">Please choose from the options below to register your device for real-time monitoring.</p>
