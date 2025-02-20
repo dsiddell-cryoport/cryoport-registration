@@ -1,7 +1,8 @@
 // Header.js
 import React from 'react';
 import CONFIG from '../config';
-import logo from '{CONFIG.headerImage}';
+//strLogo = {CONFIG.headerImage};
+import logo from './assets/cryoport-svg.svg';
 
 function Header() {
     return (
