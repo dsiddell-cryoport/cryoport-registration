@@ -30,6 +30,10 @@ body {
     border-radius: 10px;
 }
 
+.header-subtext (
+    font-size: 0.4em;
+)
+
 .header img {
     max-width: 100px;
     margin-bottom: 15px;
