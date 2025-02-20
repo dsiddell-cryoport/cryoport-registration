@@ -1,7 +1,7 @@
 // RegisterDevice.js
 import React from 'react';
 import CONFIG from '../config';
-import bioconnectIcon from '../assets/bioconnect.png';
+import bioconnectIcon from '../assets/monitor.svg';
 import registerUserIcon from '../assets/register-user.svg';
 import loginUserIcon from '../assets/login-user.svg';
 
