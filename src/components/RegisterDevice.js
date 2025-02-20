@@ -1,14 +1,24 @@
 // RegisterDevice.js
 import React from 'react';
 import CONFIG from '../config';
+import bioconnectIcon from '../assets/bioconnect.png';
+import registerUserIcon from '../assets/register-user.svg';
+import loginUserIcon from '../assets/login-user.svg';
 
 function RegisterDevice() {
     return (
         <div className="register-device">
+            <img src={bioconnectIcon} alt="BioConnect Icon" className="section-icon" />
             <h2>Already authorized for {CONFIG.productName}?</h2>
             <p>Register your device now!</p>
-            <a href={CONFIG.registerNewUser} className="register-link">Register as a new user</a>
-            <a href={CONFIG.registerDevice} className="register-link">Register a device to an existing user account</a>
+            <div className="register-links">
+                <img src={registerUserIcon} alt="Register User Icon" className="register-icon" />
+                <a href={CONFIG.registerNewUser} className="register-link">Register as a new user</a>
+            </div>
+            <div className="register-links">
+                <img src={loginUserIcon} alt="Login User Icon" className="register-icon" />
+                <a href={CONFIG.registerDevice} className="register-link">Register a device to an existing user account</a>
+            </div>
         </div>
     );
 }

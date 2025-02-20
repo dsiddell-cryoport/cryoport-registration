@@ -4,6 +4,17 @@
     font-family: Arial, sans-serif;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 50px;
+}
+
 .header-image {
     max-width: 100%;
     height: auto;
@@ -23,9 +34,19 @@
     border-radius: 10px;
 }
 
-.contact-link, .register-link {
-    display: block;
+.contact-links, .register-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
+}
+
+.contact-icon, .register-icon, .section-icon {
+    height: 30px;
+}
+
+.contact-link, .register-link {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
