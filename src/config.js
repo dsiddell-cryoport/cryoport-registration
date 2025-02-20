@@ -1,7 +1,7 @@
 // config.js
 const CONFIG = {
     companyName: "MVE Biological Solutions",
-    productName: "BIOCONNECT",
+    productName: "BIOCONNECT MONITORING",
     headerImage: "../src/assets/cryoport-svg.svg", // Updated to use local asset
     contactEmail: "mailto:support@mvebioconnect.com",
     contactPhone: "tel:+014043831900",
