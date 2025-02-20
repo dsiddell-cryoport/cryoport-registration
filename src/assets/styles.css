@@ -1,5 +1,4 @@
 /* styles.css */
-/* styles.css */
 body {
     display: flex;
     flex-direction: column;
@@ -20,15 +19,19 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header {
+.header, .contact-support, .register-device {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 22px auto; /* Center align with spacing */
     background-color: #007bff;
     color: white;
     border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .header img {
@@ -36,16 +39,9 @@ body {
     margin-bottom: 15px;
 }
 
-/* Ensure background color applies */
-.section, .contact-support, .register-device {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 22px; /* Increased space by 10% */
+.contact-support, .register-device {
     background-color: #e0f7fa !important;
-    padding: 20px;
-    border-radius: 10px;
+    color: black;
 }
 
 .section-icon.large-icon {
@@ -85,6 +81,9 @@ body {
     .section-icon.large-icon {
         width: 120px;
     }
+    .header, .contact-support, .register-device {
+        max-width: 800px; /* Align with header width */
+    }
 }
 
 @media (max-width: 480px) {
@@ -97,5 +96,8 @@ body {
     }
     .section-icon.large-icon {
         width: 100px;
+    }
+    .header, .contact-support, .register-device {
+        max-width: 90%;
     }
 }

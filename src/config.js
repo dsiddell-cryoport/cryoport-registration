@@ -2,7 +2,7 @@
 const CONFIG = {
     companyName: "MVE Biological Solutions",
     productName: "BIOCONNECT",
-    headerImage: ".src//assets/cryo-logo.png", // Updated to use local asset
+    headerImage: "../assets/cryo-logo.png", // Updated to use local asset
     contactEmail: "mailto:support@mvebioconnect.com",
     contactPhone: "tel:+014043831900",
     //registerNewUser: "https://dev-wdd3veon1ju6jgpy.us.auth0.com/u/signup",
