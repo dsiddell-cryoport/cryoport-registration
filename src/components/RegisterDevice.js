@@ -8,9 +8,9 @@ import loginUserIcon from '../assets/login-user.svg';
 function RegisterDevice() {
     return (
         <div className="section register-device">
-            <img src={bioconnectIcon} alt="BioConnect Icon" className="section-icon large-icon" />
             <h2>Already authorized for {CONFIG.productName}?</h2>
             <p>Register your device now!</p>
+            <img src={bioconnectIcon} alt="BioConnect Icon" className="section-icon large-icon" />
             <div className="icon-text-container">
                 <div className="icon-text">
                     <img src={registerUserIcon} alt="Register User Icon" className="register-icon" />

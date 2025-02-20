@@ -8,9 +8,9 @@ import phoneIcon from '../assets/phone.svg';
 function ContactSupport() {
     return (
         <div className="section contact-support">
-            <img src={supportIcon} alt="Support Icon" className="section-icon large-icon" />
             <h2>Not familiar with {CONFIG.productName}?</h2>
             <p>Our support experts can help!</p>
+            <img src={supportIcon} alt="Support Icon" className="section-icon large-icon" />
             <div className="icon-text-container">
                 <div className="icon-text">
                     <img src={emailIcon} alt="Email Icon" className="contact-icon" />
